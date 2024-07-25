@@ -1,0 +1,215 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>吉探爸爸-門市資訊</title>
+  <link rel="icon" href="img/logo.png"><!--縮圖-->
+  <!--字體-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<style>
+  .h1div {
+    font-size: 35px;
+    color: orange;
+  }
+
+  .venue-info {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  margin: 150px 150px 80px 150px;
+  font-size: 20px;
+  line-height:2;
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  padding: 50px;
+}
+
+.venue-image img {
+  max-width: 500px;
+  margin-right: 100px;
+}
+
+.venue-details {
+  max-width: 700px;
+}
+
+  @media only screen and (max-width: 800px) {
+    .h1div {
+      font-size: 18px;
+    }
+
+    .venue-info {
+    flex-direction: column;
+    width: 90%;
+    margin: 75px 5px 50px 5px;
+    padding: 18px 1px;
+  }
+
+  .venue-image, .venue-details {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .venue-image img {
+    margin-right: 0;
+    width: 300px;
+  }
+  iframe {
+    max-width: 100%; /* 在小屏幕上，讓地圖寬度填滿容器 */
+  }
+  }
+
+
+</style>
+
+<body>
+
+  <div class="fixed_bg">
+
+    <!-- 選單 -->
+    <div class='menu'>
+      <div class="rwdlogo"><a href="index.html"><img style='margin-right: 10px;' src="img/logo.png"></a>
+        <h1>吉探爸爸養蜂農場</h1>
+      </div>
+      <div class="rwdshop">
+        <a href="shopcar.html" class="cart-link"><img style="width:33px; margin-top:10px;"
+         src="img/shopp.png"><span class="cart-count">1 <!-- 數字可以改變量 --></span></a>
+         <a href="nomember.html" class="cart-link"><img style="width:33px; margin-top:10px;"
+         src="img/list.png"></a>
+       </div> 
+      <ul class="drop_down_menu">
+        <div class="logo"><a href="index.html"><img src="img/logo.png"></a></div>
+        <li><a href="news.html">最新消息</a></li>
+        <li><a href="Shop.html">購物商城</a></li>
+        <li><a href="our_story.html">品牌故事</a></li>
+        <li><a href="tea_story.html">門市資訊</a></li>
+        <li><a href="connection.html">聯絡我們</a></li>
+        <li><a href="member.html">會員專區</a></li>
+        <li><a href="shopcar.html" class="cart-link"><img style="width:43px;" src="img/shopp.png"><span class="cart-text">購物車</span><span
+              class="cart-count">1 <!-- 數字可以改變量 --></span></a></li>
+        <li><a href="nomember.html" class="cart-link"><img style="width:43px;" src="img/list.png"><span class="cart-text">訂單查詢</span></a></li>      
+      </ul>
+
+      <ul class="icons">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close-outline"></ion-icon>
+      </ul>
+    </div>
+
+    <!-- 返回最上方按鈕 -->
+    <script src="js/up.js"></script>
+      <button id="goToTopBtn" onclick="goToTop()"></button>
+  <!-- 右下購物車按鈕 -->
+  <button id="cartBtn">
+    <a href="shopcar.html" class="cart-link"><img style="width:40px;" src="img/shopp.png"><span
+      class="cart-count-right">1 <!-- 數字可以改變量 --></span></a>
+  </button> 
+  <!-- FB和LINE -->  
+  <button id="cartBtn2">    
+  <a href="https://www.facebook.com/Gtonpapa" target="_blank"><img src="img/FB.png"></a>
+  </button> 
+  <button id="cartBtn3"> 
+  <a href="https://line.me/ti/p/@rav3898t" target="_blank"><img src="img/LINE.png"></a>
+  </button>
+
+    <div class="space">
+      門市資訊<br>
+      <span>Store information</span>
+    </div>
+
+  </div>
+
+
+  <div class="venue-info">
+    <div class="venue-image">
+      <img src="img/S__61235222.jpg" alt="場館圖片">
+    </div>
+  <div class="venue-details">
+      <h1 class="h1div">吉探爸爸養蜂農場</h1>
+      <p>• 營業時間: 星期一到~星期日9:00 AM - 5:00 PM</p>
+      <p>• 連絡電話: 0963 909 383</p>
+      <p>• 地址: 412台中市大里區健行路68號</p>
+      <div class="google-map">
+        <!-- Google 地圖嵌入代碼 -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14569.525219377454!2d120.7356699!3d24.0880827!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346922bad7f4e5ad%3A0x9ebea56fff69fca6!2z5ZCJ5o6i54i454i46aSK6JyC6L6y5aC0!5e0!3m2!1szh-TW!2stw!4v1690518232966!5m2!1szh-TW!2stw" 
+        width="500" height="400" style="border:0; margin-top: 15px;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="bggoods">
+    <div class="hideme" style="margin-left: 10%;">
+      <div class="title"><span>聯絡資訊</span></div>
+    </div>
+    <div class="conn">
+
+      <!-- 聯絡資訊 -->
+      <div class="content_bg">
+        <div class="hideme">
+          <div class="text_box">
+            <ul>
+              <li><ion-icon name="location-outline"></ion-icon> 地址：412台中市大里區健行路68號</li>
+              <li><ion-icon name="call-outline"></ion-icon> 電話：0963 909 383</li>
+              <li><ion-icon name="logo-facebook"></ion-icon> <a href="https://www.facebook.com/Gtonpapa" target="_blank"
+                  style="text-decoration: none; color: inherit;">Facebook 專頁</a></li>
+              <li><ion-icon name="chatbubble-ellipses-outline"></ion-icon> <a href="https://line.me/ti/p/@rav3898t"
+                  target="_blank" style="text-decoration: none; color: inherit;">LINE 官方帳號</a></li>
+              <li><ion-icon name="logo-youtube"></ion-icon> <a href="https://www.youtube.com/watch?v=m7iQLeXk4jo&t=153s"
+                  target="_blank" style="text-decoration: none; color: inherit;">YouTube 頻道</a></li>
+              <li><ion-icon name="logo-instagram"></ion-icon> <a
+                  href="https://instagram.com/gtonpapa88?igshid=MzRlODBiNWFlZA==" target="_blank"
+                  style="text-decoration: none; color: inherit;">Instagram 帳號</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+  <!-- RWD icon標籤頁尾 -->
+  <div class="rwdFooter">
+    <a href="index.html"><span class="material-icons">
+        home
+      </span>
+    </a>
+    <a href="member.html"><span class="material-icons">
+        account_box
+      </span>
+    </a>
+    <a href="shopcar.html">
+      <span class="material-icons">
+        shopping_cart
+      </span>
+    </a>
+    <a href="tea_story.html">
+      <span class="material-icons">
+        phone
+      </span>
+    </a>
+  </div>
+
+  <!-- 頁尾 -->
+  <footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/footer.js"></script>
+  </footer>
+
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src=https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js>
+  </script>
+  <script src="js/jqload.js"></script>
+
+</body>
+
+</html>

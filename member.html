@@ -1,0 +1,320 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>吉探爸爸-會員專區</title>
+  <link rel="icon" href="img/logo.png"><!--縮圖-->
+  <!--字體-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/opening_animation.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- 選單 -->
+  <div class='menu'>
+    <div class="rwdlogo"><a href="index.html"><img style='margin-right: 10px;' src="img/logo.png"></a>
+      <h1>吉探爸爸養蜂農場</h1>
+    </div>
+    <div class="rwdshop">
+         <a href="shopcar.html" class="cart-link"><img style="width:33px; margin-top:10px;"
+          src="img/shopp.png"><span class="cart-count">1 <!-- 數字可以改變量 --></span></a>
+          <a href="nomember.html" class="cart-link"><img style="width:33px; margin-top:10px;"
+          src="img/list.png"></a>
+        </div>      
+    <ul class="drop_down_menu">  
+      <div class="logo"><a href="index.html"><img src="img/logo.png"></a></div>
+      <li><a href="news.html">最新消息</a></li>
+      <li><a href="Shop.html">購物商城</a></li>
+      <li><a href="our_story.html">品牌故事</a></li>
+      <li><a href="tea_story.html">門市資訊</a></li>
+      <li><a href="connection.html">聯絡我們</a></li>
+      <li><a href="member.html">會員專區</a></li>
+      <li><a href="shopcar.html" class="cart-link"><img style="width:43px;" src="img/shopp.png"><span class="cart-text">購物車</span><span
+            class="cart-count">1 <!-- 數字可以改變量 --></span></a></li>
+      <li><a href="nomember.html" class="cart-link"><img style="width:43px;" src="img/list.png"><span class="cart-text">訂單查詢</span></a></li>      
+    </ul>
+    <ul class="icons">
+      <ion-icon name="menu-outline"></ion-icon>
+      <ion-icon name="close-outline"></ion-icon>
+    </ul>
+  </div>
+
+  <!-- 返回最上方按鈕 -->
+  <script src="js/up.js"></script>
+    <button id="goToTopBtn" onclick="goToTop()"></button>
+  <!-- 右下購物車按鈕 -->
+  <button id="cartBtn">
+    <a href="shopcar.html" class="cart-link"><img style="width:40px;" src="img/shopp.png"><span
+      class="cart-count-right">1 <!-- 數字可以改變量 --></span></a>
+  </button> 
+  <!-- FB和LINE -->  
+  <button id="cartBtn2">    
+  <a href="https://www.facebook.com/Gtonpapa" target="_blank"><img src="img/FB.png"></a>
+  </button> 
+  <button id="cartBtn3"> 
+  <a href="https://line.me/ti/p/@rav3898t" target="_blank"><img src="img/LINE.png"></a>
+  </button>
+
+  <div class="space">
+    會員專區<br>
+    <span>Member Area</span>
+  </div>
+
+  <!-- 登入表單 -->
+  <div class="login-container">
+
+    <form class="login-form" id="loginForm">
+      <h1>【會員登入】</h1>
+      <div class="login-form-item">
+        <label class="login-form-label" for="username">使用者名稱:*</label>
+        <input class="login-form-input" type="text" id="username" name="username" required>
+      </div>
+      <div class="login-form-item">
+        <label class="login-form-label" for="password">使用者密碼:*</label>
+        <input class="login-form-input" type="password" id="password" name="password" required>
+      </div>
+      <div class="login-form-a">
+        <a href="#" onclick="showForm('forgetPasswordForm')">忘記密碼</a><span style="font-size: 23px;">|</span><a href="#"
+          onclick="showForm('registerForm')">加入會員</a>
+      </div>
+      <div class="login-form-item">
+        <input class="login-form-submit" type="submit" value="會員登入">
+      </div>
+    </form>
+
+    <!-- 忘記密碼表單 -->
+    <form class="forget-password-form" id="forgetPasswordForm" style="display: none;">
+      <!-- 忘記密碼表單 -->
+      <form class="forget-password-form" id="forgetPasswordForm" style="display: none;">
+        <h1>【忘記密碼】</h1>
+        <div class="login-form-item">
+          <label class="login-form-label" for="forgotEmail">輸入註冊的電子郵件:*</label>
+          <input class="login-form-input" type="email" id="forgotEmail" name="forgotEmail" required>
+        </div>
+        <div class="login-form-item">
+          <input class="login-form-submit" type="submit" value="寄送驗證碼">
+        </div>
+        <!-- 返回登入頁面按鈕 -->
+        <div class="login-form-item">
+          <button class="login-form-submit" onclick="showForm('loginForm')">返回登入頁面</button>
+        </div>
+      </form>
+
+
+    </form>
+
+    <!-- 加入會員表單 -->
+    <form class="register-form" id="registerForm" style="display: none;">
+      <h1>【加入會員】</h1>
+      <div class="login-form-item">
+        <label class="login-form-label" for="email">電子郵件:*</label>
+        <input class="login-form-input" type="email" id="email" name="email" required>
+      </div>
+      <div class="login-form-item">
+        <label class="login-form-label" for="password">密碼:*</label>
+        <input class="login-form-input" type="password" id="password" name="password" required>
+      </div>
+      <div class="login-form-item">
+        <label class="login-form-label" for="confirmPassword">確認密碼:*</label>
+        <input class="login-form-input" type="password" id="confirmPassword" name="confirmPassword" required>
+      </div>
+      <div class="login-form-item">
+        <label class="login-form-label" for="chineseName">中文姓名:*</label>
+        <input class="login-form-input" type="text" id="chineseName" name="chineseName" required>
+      </div>
+      <div class="login-form-item">
+        <label class="login-form-label">小姐/先生:</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">小姐</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">先生</label>
+      </div>
+      <div class="login-form-item">
+        <label class="login-form-label" for="contactNumber">聯絡電話:*</label>
+        <input class="login-form-input" type="tel" id="contactNumber" name="contactNumber" required>
+      </div>
+      <div class="login-form-item">
+        <label class="login-form-label" for="contactNumber">LINE ID:(非必填)</label>
+        <input class="login-form-input" type="tel" id="lineid" name="lineid" required>
+      </div>
+      <div class="login-form-item">
+        <label class="login-form-label" for="address">地址:</label>
+        <select class="login-form-input" id="city" name="city" required onchange="updateDistrictOptions()">
+          <option value="" disabled selected>請選擇城市</option>
+        </select><br>
+
+        <label class="login-form-label" for="address">鄉鎮區:</label>
+        <select class="login-form-input" id="district" name="district" required>
+          <option value="" disabled selected>請選擇鄉鎮區</option>
+        </select><br>
+
+        <input class="login-form-input" type="text" id="address" name="address" required><br>
+
+        <label class="login-form-label" for="address">郵遞區號</label>
+        <input class="login-form-input" type="text" id="zipcode" name="zipcode" required pattern="[0-9]{3,5}"><br>
+      </div>
+      <div class="login-form-item">
+        <input class="login-form-submit" type="submit" value="加入會員">
+      </div>
+      <!-- 返回登入頁面按鈕 -->
+      <div class="login-form-item">
+        <button class="login-form-submit" onclick="showForm('loginForm')">返回登入頁面</button>
+      </div>
+    </form>
+
+
+
+
+    <!-- 已登入顯示會員基本資料 -->
+    <div id="memberInfo" style="display: none;">
+      <h1>【會員基本資料】</h1>
+      <div class="login-form-item">
+        <label class="login-form-label" for="">電子郵件：</label>
+        <span id="email">user@example.com</span>
+      </div>
+      <div class="login-form-item">
+        <label class="login-form-label" for="">密碼：</label>
+        <span id="password">*****998</span>
+      </div>
+      <div class="login-form-item">
+        <label class="login-form-label" for="">中文姓名：</label>
+        <span id="chineseName">王小明</span>
+      </div>
+      <div class="login-form-item">
+        <label class="login-form-label" for="">先生/小姐：</label>
+        <span id="gender">先生</span>
+      </div>
+      <div class="login-form-item">
+        <label class="login-form-label" for="">連絡電話：</label>
+        <span id="phone">0901234567</span>
+      </div>
+      <div class="login-form-item">
+        <label class="login-form-label" for="">Line ID：</label>
+        <span id="lineId">user_line_id</span>
+      </div>
+      <div class="login-form-item">
+        <label class="login-form-label" for="">地址：</label>
+        <span id="address">台北市中正區XX街XX號</span>
+      </div>
+      <div class="login-form-item">
+        <label class="login-form-label" for="">吉探幣餘額：</label>
+        <span id="address">15點</span>
+      </div>
+      <!-- 登出按鈕 -->
+      <div class="login-form-item">
+        <button class="login-form-submit" onclick="performLogout()">登出</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- RWD icon標籤頁尾 -->
+  <div class="rwdFooter">
+    <a href="index.html"><span class="material-icons">
+        home
+      </span>
+    </a>
+    <a href="member.html"><span class="material-icons">
+        account_box
+      </span>
+    </a>
+    <a href="shopcar.html">
+      <span class="material-icons">
+        shopping_cart
+      </span>
+    </a>
+    <a href="tea_story.html">
+      <span class="material-icons">
+        phone
+      </span>
+    </a>
+  </div>
+
+  <!-- 頁尾 -->
+  <footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/footer.js"></script>
+  </footer>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/jqload.js"></script>
+
+  <script>
+    // 顯示指定的表單並隱藏其他表單
+    function showForm(formId) {
+      const loginForm = document.getElementById('loginForm');
+      const forgetPasswordForm = document.getElementById('forgetPasswordForm');
+      const registerForm = document.getElementById('registerForm');
+
+      switch (formId) {
+        case 'forgetPasswordForm':
+          loginForm.style.display = 'none';
+          forgetPasswordForm.style.display = 'block';
+          registerForm.style.display = 'none';
+          break;
+        case 'registerForm':
+          loginForm.style.display = 'none';
+          forgetPasswordForm.style.display = 'none';
+          registerForm.style.display = 'block';
+          break;
+        default:
+          loginForm.style.display = 'block';
+          forgetPasswordForm.style.display = 'none';
+          registerForm.style.display = 'none';
+          break;
+      }
+    }
+
+    // 假設您有一個處理表單提交的登入 API 端點
+    // ... (這裡放置原來的登入表單處理代碼)
+
+
+    // 儲存城市與鄉鎮區的JSON資料
+    let citiesData = {};
+
+    // 讀取JSON資料，並生成城市選項
+    fetch('https://gist.githubusercontent.com/abc873693/2804e64324eaaf26515281710e1792df/raw/a1e1fc17d04b47c564bbd9dba0d59a6a325ec7c1/taiwan_districts.json')
+      .then(response => response.json())
+      .then(data => {
+        citiesData = data; // 將JSON資料儲存到citiesData變數中
+        const citySelect = document.getElementById("city");
+        for (const cityCode in citiesData) {
+          const cityName = citiesData[cityCode].name;
+          const option = document.createElement("option");
+          option.value = cityCode;
+          option.textContent = cityName;
+          citySelect.appendChild(option);
+        }
+      })
+      .catch(error => console.error('Error fetching cities data:', error));
+
+    function updateDistrictOptions() {
+      const citySelect = document.getElementById("city");
+      const districtSelect = document.getElementById("district");
+      const selectedCityCode = citySelect.value;
+
+      // 清空鄉鎮區選項
+      districtSelect.innerHTML = '<option value="" disabled selected>請選擇鄉鎮區</option>';
+
+      // 根據所選的城市，動態生成對應的鄉鎮區選項
+      if (selectedCityCode && citiesData[selectedCityCode]) {
+        const districts = citiesData[selectedCityCode].districts;
+        districts.forEach(district => {
+          const option = document.createElement("option");
+          option.value = district.name;
+          option.textContent = district.name;
+          districtSelect.appendChild(option);
+        });
+      }
+    }
+
+
+  </script>
+</body>
+
+</html>

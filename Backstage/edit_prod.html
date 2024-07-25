@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+<title>吉探爸爸 - 管理者控制</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/BackStage.css">
+<link rel="icon" href="img/logo.png">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+</head>
+
+<body>
+    
+    
+  <!-- 左邊側欄 -->
+  <script src="js/menu.js"></script> 
+
+
+
+    <div id="operation_place">
+        <h1 class="work_addr">
+            <span>購物商城</span>
+            <span>商品編輯</span>
+        </h1>
+        <div class="work_wrap">
+
+            <div class="row_5_5">
+                <div class="row_L">
+                    <form>
+                        <div>
+                            <h2 class="step_title">商品圖片<span class="notice">注意: 商品照長寬需1*1，商品名不可超過9個字。</span></h2>
+                            
+                            <div class="user_input_wrap">
+                                <input type="file" accept="image/*" multiple required>
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <h2 class="step_title">商品資料</h2>
+
+                            <div class="user_input_wrap">
+                                <div class="row">
+                                    <input type="text" placeholder="商品名稱" required>
+                                    <select>
+                                        <option selected="selected" disabled>商品分類</option>
+                                    </select>
+                                </div>
+                                <textarea placeholder="商品規格"></textarea>
+
+                                <div class="prod_price_wrap">
+                                    <div class="onoffswitch">
+                                        <input type="checkbox" class="onoffdiscount_btn" id="discount_btn">
+                                        <label for="discount_btn" class="onoffdiscount_cnt">
+                                            <span class="discount_btn_inner"></span>
+                                            <span class="discount_btn_switch"></span>
+                                        </label>
+                                    </div>
+                
+                                    <div class="row">
+                                        <input type="number" placeholder="價格：" class="origin" required>
+                                        <input type="number" placeholder="特價：" class="discount">
+                                    </div>
+                                </div>
+                                
+
+                            </div>
+                        </div>
+                        
+                        <div class="form_submit">
+                            <input type="submit" value="確認" checked>
+                            <input type="button" onclick="history.back()" value="取消">
+                        </div>
+
+                    </form>
+                </div>
+
+
+
+
+
+                <div class="row_R">
+
+                    <div class="prvw_imgs_file">
+                        <h2 class="prvw_title">商品圖 - 檔案總覽</h2>
+                    
+                        <div class="prvw_files">
+                            <h3 class="prvw_files_title">檔案名稱</h3>
+                            <div class="items">
+                                <div class="prvw_files_cnt">
+                                    <p class="file_name">abc.jpg</p>
+                                    <img class="file_img" src="img/product/good01.JPG">
+                                </div>
+                                <span class="prvw_btn">查看</span>
+                                <form>
+                                    <input type="submit" class="del_btn" value="刪除">
+                                </form>
+                            </div>
+
+                            <div class="items">
+                                <div class="prvw_files_cnt">
+                                    <p class="file_name">abc.jpg</p>
+                                    <img class="file_img" src="img/product/good01.JPG">
+                                </div>
+                                <span class="prvw_btn">查看</span>
+                                <form>
+                                    <input type="submit" class="del_btn" value="刪除">
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                </div>
+                    
+            </div>
+            
+
+        </div>
+    </div>
+
+
+<!--    
+    <div class="float_bg prvw_files_img">
+        <div class="files_img">
+            <img src="img/product/good01.JPG">
+            <p class="files_name">good01.jpg</p>
+        </div>
+    </div> -->
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src=js/BackStage.js></script>
+<script src=js/prod.js></script>
+    
+</body>
+</html>

@@ -1,0 +1,208 @@
+﻿<!doctype html>
+<html>
+<head>
+<title>吉探爸爸 - 管理者控制</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/BackStage.css">
+<link rel="icon" href="img/logo.png">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+</head>
+
+
+<body>
+    
+    
+   <!-- 左邊側欄 -->
+   <script src="js/menu.js"></script> 
+
+
+<div class="search-box">
+    <div class="excel-box">
+    <button id="exportExcel">下載並匯出成Excel檔</button>
+    </div>
+    <input type="text" placeholder="輸入資料關鍵字">
+    <button>查詢</button>
+</div>
+
+   
+<div id="operation_place">
+    <h1 class="work_addr">
+        <span>藍新金流資料</span>
+        <span>消費紀錄管理</span>
+    </h1>
+
+    <div class="work_wrap">
+        <div class="shopping_list_wrap">
+
+            <div class="order">
+                    <span class="payment-date">付款日期 2023-09-04 21:35:45</span>
+                    <i class="fas fa-chevron-down toggle-icon" onclick="toggleOrderDetail(this)"></i>
+                <div class="order_detail" style="display: none;">
+                    <div>
+                        <div class="CUS_infor">
+                            <h3>訂單資料</h3>
+                            <b>訂單編號</b><p class="CUS_tel">b8191474b3fd486481a2</p>
+                            <b>繳費截止</b> <p class="CUS_tel">2023-10-01 23:59:59</p>    
+                            <b>訂單狀態</b><p class="CUS_tel">付款完成</p>
+                            <b>付款方式</b><p class="CUS_tel">信用卡</p>
+                            <b>運送方式</b><p class="CUS_tel">宅配</p>                           
+                        </div>
+
+                                    <div class="ATTN_infor">
+                                      <h3>收件人資料</h3>
+                                        <p class="ATTN_name">AAA</p>
+                                        <p class="ATTN_tel">0999999999</p>
+                                        <p class="ATTN_addr">嘉義市東區彌陀路２３８巷６９號</p>
+                                      </div>
+          
+                    </div>
+                       
+                    <div class="order_list">
+                        <table>
+                            <tr>
+                                 <th>商品名稱</th>
+                            </tr>
+                             
+                                
+                            <tr>
+                                <td>【吉探爸爸養蜂農場】 百花蜂蜜1800gx1</td>
+                            </tr>
+                                   
+                            <tr>
+                                <th>檢查碼</th>
+                            </tr>
+                            <tr>
+                                <td>A42DCD008688A9DFBA53004EC054E0F1488A10263336E5ACBE7EB1EDBD65E478</td>
+                            </tr>
+                            
+                         
+                        </table>
+
+                    </div>
+                        
+                </div>
+            </div>
+
+            <div class="order">
+                <span class="payment-date">付款日期 2023-09-04 21:35:45</span>
+                <i class="fas fa-chevron-down toggle-icon" onclick="toggleOrderDetail(this)"></i>
+            <div class="order_detail" style="display: none;">
+                <div>
+                    <div class="CUS_infor">
+                        <h3>訂單資料</h3>
+                        <b>訂單編號</b><p class="CUS_tel">b8191474b3fd486481a2</p>
+                        <b>繳費截止</b> <p class="CUS_tel">2023-10-01 23:59:59</p>    
+                        <b>訂單狀態</b><p class="CUS_tel">付款完成</p>
+                        <b>付款方式</b><p class="CUS_tel">信用卡</p>
+                        <b>運送方式</b><p class="CUS_tel">宅配</p>                           
+                    </div>
+
+                                <div class="ATTN_infor">
+                                  <h3>收件人資料</h3>
+                                    <p class="ATTN_name">AAA</p>
+                                    <p class="ATTN_tel">0999999999</p>
+                                    <p class="ATTN_addr">嘉義市東區彌陀路２３８巷６９號</p>
+                                  </div>
+      
+                </div>
+                   
+                <div class="order_list">
+                    <table>
+                        <tr>
+                             <th>商品名稱</th>
+                        </tr>
+                         
+                            
+                        <tr>
+                            <td>【吉探爸爸養蜂農場】 百花蜂蜜1800gx1</td>
+                        </tr>
+                               
+                        <tr>
+                            <th>檢查碼</th>
+                        </tr>
+                        <tr>
+                            <td>A42DCD008688A9DFBA53004EC054E0F1488A10263336E5ACBE7EB1EDBD65E478</td>
+                        </tr>
+                        
+                     
+                    </table>
+
+                </div>
+                    
+            </div>
+        </div>
+            
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src=js/BackStage.js></script>
+<script src=js/prod.js></script> 
+</body>
+<script>
+    function toggleOrderDetail(icon) {
+        var orderDetail = icon.nextElementSibling;
+        if (orderDetail.style.display === "none") {
+            orderDetail.style.display = "block";
+            applyOrderDetailStyles(orderDetail);
+        } else {
+            orderDetail.style.display = "none";
+        }
+    }
+
+    function applyOrderDetailStyles(orderDetail) {
+
+        // .order_detail 的現有 CSS 樣式位於此處
+
+
+        orderDetail.style.transition = "height 0.5s ease-in-out";
+
+        orderDetail.style.width = "100%";
+        orderDetail.style.display = "grid";
+        orderDetail.style.gridTemplateColumns = "4fr 6fr";
+        orderDetail.style.gap = "1em";
+
+        var orderDetailChildren = orderDetail.children;
+        for (var i = 0; i < orderDetailChildren.length; i++) {
+            var child = orderDetailChildren[i];
+            child.style.height = "100%";
+            child.style.width = "100%";
+            child.style.display = "flex";
+            child.style.justifyContent = "space-between";
+            child.style.alignItems = "flex-start";
+            child.style.flexFlow = "column nowrap";
+
+            if (child.classList.contains("CUS_infor")) {
+                child.style.flex = "0 0 45%";
+            } else if (child.classList.contains("ATTN_infor")) {
+                child.style.flex = "0 0 55%";
+            }
+
+            var grandChildren = child.children;
+            for (var j = 0; j < grandChildren.length; j++) {
+                var grandChild = grandChildren[j];
+
+                if (grandChild.tagName === "H3" || grandChild.tagName === "P") {
+                    grandChild.style.marginBottom = "0.25em";
+                }
+
+                if (grandChild.classList.contains("CUS_infor") || grandChild.classList.contains("ATTN_infor")) {
+                    grandChild.style.width = "100%";
+                }
+            }
+        }
+    }
+</script>
+
+
+
+
+
+</html>
+

@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Tahoma , Georgia , 'Times New Roman', Times, sans-serif;
+    transition: all 0.5s;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(180, 180, 180, 0.8);
+}
+/*-------------------login----------------------*/
+form{
+    min-height: 60%;
+    min-width: 25%;
+    padding: 2em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column wrap;
+    box-shadow: 5px 5px 20px rgba(50,50,50,0.8);
+    background-color: rgba(230,230,230,0.8);
+}
+    label{
+        width: 70%;
+    }
+    input{
+        width: 100%;
+        padding: 0.25em 0.5em;
+        font-size: 1.2em;
+        border-radius: 10px;
+        background-color: rgb(200,200,200);
+    }
+    input:focus{
+        background-color: white;
+    }
+    .log_in{
+        padding: 0.5em 1em;
+        border-radius: 10px;
+        background-color: rgba(230,255,150,0.8);
+        font-weight: bolder;
+        box-shadow: 3px 3px 5px black;
+    }
+    .log_in:hover{
+        box-shadow: 0px 0px 5px black;
+    }
+

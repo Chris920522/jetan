@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>吉探爸爸-商品詳情</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="icon" href="img/logo.png"><!--縮圖-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body id="card-body">
+    <header>
+        <!-- 選單 -->
+        <div class='menu'>
+            <div class="rwdlogo"><a href="index.html"><img style='margin-right: 10px;' src="img/logo.png"></a>
+                <h1>吉探爸爸養蜂農場</h1>
+            </div>
+            <div class="rwdshop">
+                <a href="shopcar.html" class="cart-link"><img style="width:33px; margin-top:10px;"
+                 src="img/shopp.png"><span class="cart-count">1 <!-- 數字可以改變量 --></span></a>
+                 <a href="nomember.html" class="cart-link"><img style="width:33px; margin-top:10px;"
+                 src="img/list.png"></a>
+               </div> 
+            <ul class="drop_down_menu">
+                <div class="logo"><a href="index.html"><img src="img/logo.png"></a></div>
+                <li><a href="news.html">最新消息</a></li>
+                <li><a href="Shop.html">購物商城</a></li>
+                <li><a href="our_story.html">品牌故事</a></li>
+                <li><a href="tea_story.html">門市資訊</a></li>
+                <li><a href="connection.html">聯絡我們</a></li>
+                <li><a href="member.html">會員專區</a></li>
+                <li><a href="shopcar.html" class="cart-link"><img style="width:43px;" src="img/shopp.png"><span class="cart-text">購物車</span><span
+                            class="cart-count">1 <!-- 數字可以改變量 --></span></a></li>
+                <li><a href="nomember.html" class="cart-link"><img style="width:43px;" src="img/list.png"><span class="cart-text">訂單查詢</span></a></li>                
+            </ul>
+            <ul class="icons">
+                <ion-icon name="menu-outline"></ion-icon>
+                <ion-icon name="close-outline"></ion-icon>
+            </ul>
+        </div>
+    </header>
+    <!-- 返回最上方按鈕 -->
+    <script src="js/up.js"></script>
+      <button id="goToTopBtn" onclick="goToTop()"></button>
+  <!-- 右下購物車按鈕 -->
+  <button id="cartBtn">
+    <a href="shopcar.html" class="cart-link"><img style="width:40px;" src="img/shopp.png"><span
+      class="cart-count-right">1 <!-- 數字可以改變量 --></span></a>
+  </button> 
+  <!-- FB和LINE -->  
+  <button id="cartBtn2">    
+  <a href="https://www.facebook.com/Gtonpapa" target="_blank"><img src="img/FB.png"></a>
+  </button> 
+  <button id="cartBtn3"> 
+  <a href="https://line.me/ti/p/@rav3898t" target="_blank"><img src="img/LINE.png"></a>
+  </button>
+
+    <div class="product">
+        <img src="img/LINE_ALBUM_產品照_230726_0.jpg" alt="【吉探爸爸養蜂農場】 荔枝蜂蜜1800g">
+        <div class="product-name">
+            <h1>【吉探爸爸養蜂農場】 荔枝蜂蜜1800g</h1>
+        </div>
+        <hr>
+        <p>售價</p>
+        <h1 class="price">NT.1000</h1>
+        <p class="org-price">原價 $1500</p>
+        <br>
+        <div class="info">
+            <br>(中興大學驗證"產銷履歷"蜂蜜)
+            <br>1. 100%台灣原生純蜂蜜
+            <br>2. 0蔗糖0農藥0抗生素
+            <br>3. 產地與生產者的農產品追朔
+            <br>4. 不混合外國蜜及假蜜
+            <br>5. 符合國家蜂蜜標準檢驗
+            <br>
+            <br>
+            <span style="color: red;">
+                <h4>免費加入會員，即享購買商品回饋5%吉探幣</h4>
+            </span>
+            <span style="color: red;">
+                <h4>吉探幣可用於消費折抵一點折一元。</h4>
+            </span>
+            <span style="color: red;">
+                <h4>下單後產品將在3天內寄出</h4>
+            </span>
+            <hr>
+            <br>
+        </div>
+        <div class="select">
+            <label for="amount">選擇數量</label>
+            <select name="select-amount" id="amount">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+        <button class="btn btn-third addcart infoBtnJoinCart" data-pid="1800" onclick="OpenPopout()">加 入 購 物 車</button>
+        <!--------彈出訊息-------->
+        <div class="popout" id="popout">
+            <img src="img/404-tick.png">
+            <h2>已將商品新增至購物車</h2>
+            <button type="button" onclick="ClosePopout()">確認</button>
+        </div>
+    </div>
+
+    <!-- RWD icon標籤頁尾 -->
+    <div class="rwdFooter">
+        <a href="index.html"><span class="material-icons">
+                home
+            </span>
+        </a>
+        <a href="member.html"><span class="material-icons">
+                account_box
+            </span>
+        </a>
+        <a href="shopcar.html">
+            <span class="material-icons">
+                shopping_cart
+            </span>
+        </a>
+        <a href="tea_story.html">
+            <span class="material-icons">
+                phone
+            </span>
+        </a>
+    </div>
+
+    <footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/footer.js"></script>
+    </footer>
+    <script src="js/message.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="js/jqload.js"></script>
+</body>
+
+</html>

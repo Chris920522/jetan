@@ -1,0 +1,397 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>吉探爸爸-購物商城</title>
+  <link rel="icon" href="#"><!--縮圖-->
+  <!--字體-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/main.css">
+  <link rel="icon" href="img/logo.png"><!--縮圖-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body id="shop">
+  <!-- 返回最上方按鈕 -->
+  <script src="js/up.js"></script>
+    <button id="goToTopBtn" onclick="goToTop()"></button>
+  <!-- 右下購物車按鈕 -->
+  <button id="cartBtn">
+    <a href="shopcar.html" class="cart-link"><img style="width:40px;" src="img/shopp.png"><span
+      class="cart-count-right">1 <!-- 數字可以改變量 --></span></a>
+  </button> 
+  <!-- FB和LINE -->  
+  <button id="cartBtn2">    
+  <a href="https://www.facebook.com/Gtonpapa" target="_blank"><img src="img/FB.png"></a>
+  </button> 
+  <button id="cartBtn3"> 
+  <a href="https://line.me/ti/p/@rav3898t" target="_blank"><img src="img/LINE.png"></a>
+  </button>
+
+
+  <!-- 選單 -->
+  <div class='menu'>
+    <div class="rwdlogo"><a href="index.html"><img style='margin-right: 10px;' src="img/logo.png"></a>
+      <h1>吉探爸爸養蜂農場</h1>
+    </div>
+    <div class="rwdshop">
+      <a href="shopcar.html" class="cart-link"><img style="width:33px; margin-top:10px;"
+       src="img/shopp.png"><span class="cart-count">1 <!-- 數字可以改變量 --></span></a>
+       <a href="nomember.html" class="cart-link"><img style="width:33px; margin-top:10px;"
+       src="img/list.png"></a>
+     </div> 
+    <ul class="drop_down_menu">
+      <div class="logo"><a href="index.html"><img src="img/logo.png"></a></div>
+      <li><a href="news.html">最新消息</a></li>
+      <li><a href="Shop.html">購物商城</a></li>
+      <li><a href="our_story.html">品牌故事</a></li>
+      <li><a href="tea_story.html">門市資訊</a></li>
+      <li><a href="connection.html">聯絡我們</a></li>
+      <li><a href="member.html">會員專區</a></li>
+      <li><a href="shopcar.html" class="cart-link"><img style="width:43px;" src="img/shopp.png"><span class="cart-text">購物車</span><span
+            class="cart-count">1 <!-- 數字可以改變量 --></span></a></li>
+      <li><a href="nomember.html" class="cart-link"><img style="width:43px;" src="img/list.png"><span class="cart-text">訂單查詢</span></a></li>            
+    </ul>
+
+    <ul class="icons">
+      <ion-icon name="menu-outline"></ion-icon>
+      <ion-icon name="close-outline"></ion-icon>
+    </ul>
+  </div>
+
+
+  <div class="fixed_bg">
+
+    <div class="space">
+      購物商城<br>
+      <span>Store</span>
+    </div>
+    <div class="storeContent">
+      <div class="productClassDiv">
+        <div class="searchDiv">
+          <select class="productType">
+            <option>選擇商品種類</option>
+            <option>蜂蜜</option>
+          </select>
+          <br>
+          <br>
+          <input class="searchBar" type="text" placeholder="輸入商品關鍵字">
+          <br>
+          <button class="searchBtn">
+            搜尋商品
+          </button>
+        </div>
+        <div class="productClass">
+          <br>
+          <br>
+          <H1>商品分類</H1>
+          <hr>
+          <ul class="productClassList">
+            <li><img src="img/logo.png" class="ClassListLogo"><a href="#" title="蜂蜜">蜂蜜</a></li>
+            <li><img src="img/logo.png" class="ClassListLogo"><a href="#" title="嚴選蜂王乳500公克">嚴選蜂王乳500公克</a></li>
+            <li><img src="img/logo.png" class="ClassListLogo"><a href="#" title="家庭號蜂蜜3000公克系列">家庭號蜂蜜3000公克系列</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row_list">
+
+        <div class="col-6 col-sm-4 col-md-3 col-xl-2 list-item">
+          <div class="card">
+            <div class="card-pic">
+              <a href="productinfo.html"><img src="img/LINE_ALBUM_產品照_230726_5.jpg" class="card-img"
+                  alt="【吉探爸爸養蜂農場】2023 全國頭等獎蜂蜜"></a>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">【吉探爸爸養蜂農場】2023 全國頭等獎蜂蜜</h3>
+              <p class="card-text">吉探爸爸養蜂農場</p>
+              <h2 class="card-price">NT.1600</h2>
+              <p class="card-date"></p><button class="btn btn-third addcart btnJoinCart" data-pid="1800"
+                onclick="OpenPopout()"> 加 入 購 物 車</button>
+            </div>
+            <a href="#"></a>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-xl-2 list-item">
+          <div class="card">
+            <div class="card-pic">
+              <a href="productinfo.html"><img src="img/LINE_ALBUM_產品照_230726_1.jpg" class="card-img"
+                  alt="【吉探爸爸養蜂農場】 百花蜂蜜1800g"></a>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">【吉探爸爸養蜂農場】 百花蜂蜜1800g</h3>
+              <p class="card-text">吉探爸爸養蜂農場</p>
+              <h2 class="card-price">NT.1000</h2>
+              <p class="card-date"></p><button class="btn btn-third addcart btnJoinCart" data-pid="1630"
+                onclick="OpenPopout()"> 加 入 購 物 車</button>
+            </div>
+            <a href="#"></a>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-xl-2 list-item">
+          <div class="card">
+            <div class="card-pic">
+              <a href="productinfo.html"><img src="img/LINE_ALBUM_產品照_230726_0.jpg" class="card-img"
+                  alt="【吉探爸爸養蜂農場】 荔枝蜂蜜1800g"></a>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">【吉探爸爸養蜂農場】 荔枝蜂蜜1800g</h3>
+              <p class="card-text">吉探爸爸養蜂農場</p>
+              <h2 class="card-price">NT.1000</h2>
+              <p class="card-date"></p><button class="btn btn-third addcart btnJoinCart" data-pid="1629"
+                onclick="OpenPopout()">加 入 購 物 車</button>
+            </div>
+            <a href="#"></a>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-xl-2 list-item">
+          <div class="card">
+            <div class="card-pic">
+              <a href="productinfo.html"><img src="img/LINE_ALBUM_產品照_230726_2.jpg" class="card-img"
+                  alt="【吉探爸爸養蜂農場】 龍眼蜂蜜1800g"></a>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">【吉探爸爸養蜂農場】 龍眼蜂蜜1800g</h3>
+              <p class="card-text">吉探爸爸養蜂農場</p>
+              <h2 class="card-price">NT.1000</h2>
+              <p class="card-date"></p><button class="btn btn-third addcart btnJoinCart" data-pid="1628"
+                onclick="OpenPopout()">加 入 購 物 車</button>
+            </div>
+            <a href="#"></a>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-xl-2 list-item">
+          <div class="card">
+            <div class="card-pic">
+              <a href="productinfo.html"><img src="img/LINE_ALBUM_產品照_230726_15.jpg" class="card-img"
+                  alt="【吉探爸爸養蜂農場】【隨身瓶】蜂蜜系列 130g  買15送1"></a>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">【吉探爸爸養蜂農場】【隨身瓶】蜂蜜系列 130g 買15送1</h3>
+              <p class="card-text">吉探爸爸養蜂農場</p>
+              <h2 class="card-price">NT.2250</h2>
+              <p class="card-date"></p><button class="btn btn-third addcart btnJoinCart" data-pid="1581"
+                onclick="OpenPopout()">加 入 購 物 車</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-xl-2 list-item">
+          <div class="card">
+            <div class="card-pic">
+              <a href="productinfo.html"><img src="img/LINE_ALBUM_產品照_230726_6.jpg" class="card-img"
+                  alt="【吉探爸爸養蜂農場】龍眼蜂蜜700g"></a>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">【吉探爸爸養蜂農場】龍眼蜂蜜700g</h3>
+              <p class="card-text">吉探爸爸養蜂農場</p>
+              <h2 class="card-price">NT.150</h2>
+              <p class="card-date"></p><button class="btn btn-third addcart btnJoinCart" data-pid="1580"
+                onclick="OpenPopout()">加 入 購 物 車</button>
+            </div>
+            <a href="#"></a>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-xl-2 list-item">
+          <div class="card">
+            <div class="card-pic">
+              <a href="productinfo.html"><img src="img/LINE_ALBUM_產品照_230726_8.jpg" class="card-img"
+                  alt="【吉探爸爸養蜂農場】荔枝蜂蜜700g"></a>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">【吉探爸爸養蜂農場】荔枝蜂蜜700g</h3>
+              <p class="card-text">吉探爸爸養蜂農場</p>
+              <h2 class="card-price">NT.150</h2>
+              <p class="card-date"></p><button class="btn btn-third addcart btnJoinCart" data-pid="1579"
+                onclick="OpenPopout()">加 入 購 物 車</button>
+            </div>
+            <a href="#"></a>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-xl-2 list-item">
+          <div class="card">
+            <div class="card-pic">
+              <a href="productinfo.html"><img src="img/LINE_ALBUM_產品照_230726_7.jpg" class="card-img"
+                  alt="【吉探爸爸養蜂農場】百花蜂蜜700g"></a>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">【吉探爸爸養蜂農場】百花蜂蜜700g</h3>
+              <p class="card-text">吉探爸爸養蜂農場</p>
+              <h2 class="card-price">NT.700</h2>
+              <p class="card-date"></p><button class="btn btn-third addcart btnJoinCart" data-pid="1579"
+                onclick="OpenPopout()">加 入 購 物 車</button>
+            </div>
+            <a href="#"></a>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-xl-2 list-item">
+          <div class="card">
+            <div class="card-pic">
+              <a href="productinfo.html"><img src="img/LINE_ALBUM_產品照_230726_4.jpg" class="card-img"
+                  alt="【吉探爸爸養蜂農場】黃金蜂蜜禮盒買5送1"></a>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">【吉探爸爸養蜂農場】黃金蜂蜜禮盒買5送1</h3>
+              <p class="card-text">吉探爸爸養蜂農場</p>
+              <h2 class="card-price">NT.4000</h2>
+              <p class="card-date"></p><button class="btn btn-third addcart btnJoinCart" data-pid="1579"
+                onclick="OpenPopout()">加 入 購 物 車</button>
+            </div>
+            <a href="#"></a>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-xl-2 list-item">
+          <div class="card">
+            <div class="card-pic">
+              <a href="productinfo.html"><img src="img/LINE_ALBUM_產品照_230726_12.jpg" class="card-img" alt="商品商品商品"></a>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">商品商品商品</h3>
+              <p class="card-text">吉探爸爸養蜂農場</p>
+              <h2 class="card-price">NT.XXX</h2>
+              <p class="card-date"></p><button class="btn btn-third addcart btnJoinCart" data-pid="1579"
+                onclick="OpenPopout()">加 入 購 物 車</button>
+            </div>
+            <a href="#"></a>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-xl-2 list-item">
+          <div class="card">
+            <div class="card-pic">
+              <a href="productinfo.html"><img src="img/LINE_ALBUM_產品照_230726_13.jpg" class="card-img" alt="商品商品商品"></a>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">商品商品商品</h3>
+              <p class="card-text">吉探爸爸養蜂農場</p>
+              <h2 class="card-price">NT.XXX</h2>
+              <p class="card-date"></p><button class="btn btn-third addcart btnJoinCart" data-pid="1579"
+                onclick="OpenPopout()"> 加 入 購 物 車</button>
+            </div>
+            <a href="#"></a>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-xl-2 list-item">
+          <div class="card">
+            <div class="card-pic">
+              <a href="productinfo.html"><img src="img/LINE_ALBUM_產品照_230726_14.jpg" class="card-img" alt="商品商品商品"></a>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">商品商品商品</h3>
+              <p class="card-text">吉探爸爸養蜂農場</p>
+              <h2 class="card-price">NT.XXX</h2>
+              <p class="card-date"></p><button class="btn btn-third addcart btnJoinCart" data-pid="1579"
+                onclick="OpenPopout()"> 加 入 購 物 車</button>
+            </div>
+            <a href="#"></a>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-xl-2 list-item">
+          <div class="card">
+            <div class="card-pic">
+              <a href="productinfo.html"><img src="img/LINE_ALBUM_產品照_230726_9.jpg" class="card-img" alt="商品商品商品"></a>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">商品商品商品</h3>
+              <p class="card-text">吉探爸爸養蜂農場</p>
+              <h2 class="card-price">NT.XXX</h2>
+              <p class="card-date"></p><button class="btn btn-third addcart btnJoinCart" data-pid="1579"
+                onclick="OpenPopout()"> 加 入 購 物 車</button>
+            </div>
+            <a href="#"></a>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-xl-2 list-item">
+          <div class="card">
+            <div class="card-pic">
+              <a href="productinfo.html"><img src="img/LINE_ALBUM_產品照_230726_10.jpg" class="card-img" alt="商品商品商品"></a>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">商品商品商品</h3>
+              <p class="card-text">吉探爸爸養蜂農場</p>
+              <h2 class="card-price">NT.XXX</h2>
+              <p class="card-date"></p><button class="btn btn-third addcart btnJoinCart" data-pid="1579"
+                onclick="OpenPopout()">加 入 購 物 車</button>
+            </div>
+            <a href="#"></a>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-xl-2 list-item">
+          <div class="card">
+            <div class="card-pic">
+              <a href="productinfo.html"><img src="img/LINE_ALBUM_產品照_230726_11.jpg" class="card-img" alt="商品商品商品"></a>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">商品商品商品</h3>
+              <p class="card-text">吉探爸爸養蜂農場</p>
+              <h2 class="card-price">NT.XXX</h2>
+              <p class="card-date"></p><button class="btn btn-third addcart btnJoinCart" data-pid="1579"
+                onclick="OpenPopout()">加 入 購 物 車</button>
+            </div>
+            <a href="#"></a>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-xl-2 list-item">
+          <div class="card">
+            <div class="card-pic">
+              <a href="productinfo.html"><img src="img/LINE_ALBUM_產品照_230726_3.jpg" class="card-img"
+                  alt="【吉探爸爸養蜂農場】蜂王乳"></a>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">【吉探爸爸養蜂農場】蜂王乳</h3>
+              <p class="card-text">吉探爸爸養蜂農場</p>
+              <h2 class="card-price">NT.2000</h2>
+              <p class="card-date"></p><button class="btn btn-third addcart btnJoinCart" data-pid="1579"
+                onclick="OpenPopout()">加 入 購 物 車</button>
+            </div>
+            <a href="#"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popout" id="popout">
+      <img src="img/404-tick.png">
+      <h2>已將商品新增至購物車</h2>
+      <button type="button" onclick="ClosePopout()">確認</button>
+    </div>
+
+    <!-- RWD icon標籤頁尾 -->
+    <div class="rwdFooter">
+      <a href="index.html"><span class="material-icons">
+          home
+        </span>
+      </a>
+      <a href="member.html"><span class="material-icons">
+          account_box
+        </span>
+      </a>
+      <a href="shopcar.html">
+        <span class="material-icons">
+          shopping_cart
+        </span>
+      </a>
+      <a href="tea_story.html">
+        <span class="material-icons">
+          phone
+        </span>
+      </a>
+    </div>
+
+    <footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="js/footer.js"></script>
+    </footer>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src=https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js>
+    </script>
+    <script src="js/jqload.js"></script>
+    <script src="js/ShopDetails.js"></script>
+    <script src="js/message.js"></script>
+    <script src="js/ShopNone.js"></script>
+
+
+
+</body>
+
+</html>
